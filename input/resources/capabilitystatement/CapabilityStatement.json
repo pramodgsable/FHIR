@@ -1,0 +1,49 @@
+{
+	"resourceType": "CapabilityStatement",
+	"id": "CapabilityStatement",
+	"meta": {
+		"versionId": "2",
+		"lastUpdated": "2021-05-11T10:36:09.625+00:00",
+		"source": "#U0khLeHwoxyGKzFO"
+	},
+	"url": "https://api.aperture.com/api/directories/v1.0/{directory-id}/fhir/uv/vhdir/CapabilityStatement",
+	"version": "1.0",
+	"name": "PidCapabilityStatement",
+	"title": "PidCapabilityStatement",
+	"status": "draft",
+	"experimental": true,
+	"date": "2021-05-11",
+	"publisher": "pramod",
+	"description": "Capability Statement For Pid",
+	"purpose": "Provides details of supported FHIR resources",
+	"kind": "instance",
+	"fhirVersion": "4.0.0",
+	"format": [
+		"JSON"
+	],
+	"rest": [
+		{
+			"mode": "server",
+			"resource": [
+				{
+					"type": "Practitioner",
+					"profile": "http://hl7.org/fhir/uv/vhdir/StructureDefinition/vhdir-practitioner",
+					"interaction": [
+						{
+							"code": "read"
+						}
+					],
+					"versioning": "no-version",
+					"searchParam": [
+						{
+							"name": "Practioner.id",
+							"definition": "https://api.aperture.com/api/directories/v1.0/{directory-id}/fhir/uv/vhdir/Practitioner/{practitioner-id}",
+							"type": "string",
+							"documentation": "To retrieve results of Practitioner Resource must include a mandatory field id"
+						}
+					]
+				}
+			]
+		}
+	]
+}

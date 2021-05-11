@@ -1,0 +1,82 @@
+{
+	"id": "t7PZ2Lpy",
+	"meta": {
+		"versionId": "8",
+		"lastUpdated": "2021-05-11T10:19:34.880+00:00",
+		"source": "#60xrXlaj9RnVugkw"
+	},
+	"resourceType": "ImplementationGuide",
+	"status": "draft",
+	"fhirVersion": [
+		"4.0.1"
+	],
+	"url": "https://api.aperture.com/api/directories/v1.0/{directory-id}/fhir/uv/vhdir/t7PZ2Lpy",
+	"version": "1.0",
+	"name": "DemoImplementationGuideVhDirResources",
+	"title": "Demo ImplementationGuide VhDir Based Resources",
+	"date": "2021-05-11",
+	"publisher": "Pramod",
+	"description": "This is sample implementation guide for demo purpose we have created. It will have the profiles and capability statement resource information.",
+	"jurisdiction": [
+		{
+			"text": "Need to figure it out - TODO"
+		}
+	],
+	"copyright": "Copyright @ pramod",
+	"packageId": "DemoImplementationGuideVhDirResources",
+	"definition": {
+		"resource": [
+			{
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "StructureDefinition/vhdir-practitioner",
+					"display": "PidPractitioner"
+				},
+				"name": "PidPractitioner"
+			},
+			{
+				"exampleBoolean": false,
+				"reference": {
+					"reference": "CapabilityStatement/CapabilityStatement",
+					"display": "PidCapabilityStatement"
+				},
+				"name": "PidCapabilityStatement",
+				"description": "Capability Statement For Pid"
+			}
+		],
+		"page": {
+			"nameUrl": "index.html",
+			"title": "Home Page",
+			"generation": "markdown",
+			"page": [
+				{
+					"nameUrl": "table_of_content.html",
+					"title": "Table Of Content",
+					"generation": "markdown",
+					"page": [
+						{
+							"nameUrl": "introduction.html",
+							"title": "Introduction",
+							"generation": "markdown"
+						}
+					]
+				},
+				{
+					"nameUrl": "profiles.html",
+					"title": "Profiles",
+					"generation": "markdown"
+				}
+			]
+		},
+		"parameter": [
+			{
+				"code": "copyrightyear",
+				"value": "2020+"
+			},
+			{
+				"code": "releaselabel",
+				"value": "CI Build"
+			}
+		]
+	}
+}
